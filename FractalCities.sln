@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FractalCities", "FractalCities\FractalCities.vcxproj", "{EEE336BC-1F89-4793-A460-556123DECDCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Debug|x64.ActiveCfg = Debug|x64
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Debug|x64.Build.0 = Debug|x64
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Debug|x86.ActiveCfg = Debug|Win32
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Debug|x86.Build.0 = Debug|Win32
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Release|x64.ActiveCfg = Release|x64
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Release|x64.Build.0 = Release|x64
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Release|x86.ActiveCfg = Release|Win32
+		{EEE336BC-1F89-4793-A460-556123DECDCC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5092ED6-D1EE-40F2-BF8D-86016E57C615}
+	EndGlobalSection
+EndGlobal
