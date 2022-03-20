@@ -3,6 +3,7 @@
 FCWindow::FCWindow(const std::string& title) 
 	: p_title(title) {
 	window = NULL;
+	p_renderer = NULL;
 	running = true;
 	error_state = 0;
 }
@@ -15,6 +16,8 @@ int32_t FCWindow::Init() {
 	window = glfwCreateWindow(WINDOW_HEIGHT, WINDOW_WIDTH, p_title.c_str(), NULL, NULL);
 	if (window == NULL)
 		return printd("Failed to open GLFW window.", e_ErrorLevel::d_Error);
+
+	p_renderer = new FCRenderer(window);
 	glfwMakeContextCurrent(window);
 
 	// Initialize GLEW
@@ -24,15 +27,17 @@ int32_t FCWindow::Init() {
 	// Ensure we can capture the keys being pressed
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
-	glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
+	p_renderer->Init();
 
+	std::string version;
+	version = (char*)glGetString(GL_VERSION);
+	printd(version, e_ErrorLevel::d_Info);
 	return MainLoop();
-
+	
 }
 
 int32_t FCWindow::MainLoop() {
 	do {
-		glClear(GL_COLOR_BUFFER_BIT);
 
 		// Draw the things
 		OnFrame();
@@ -48,7 +53,7 @@ int32_t FCWindow::MainLoop() {
 }
 
 void FCWindow::OnFrame() {
-
+	p_renderer->Frame();
 }
 
 bool FCWindow::HandleEvents() {

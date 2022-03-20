@@ -9,6 +9,8 @@
     </ClCompile>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Debug.cpp" />
+    <ClCompile Include="src\App\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\App\Renderer\ShaderManager\ShaderManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="App">
@@ -17,9 +19,9 @@
     <Filter Include="App\Window">
       <UniqueIdentifier>{bc2f7581-357f-4219-be11-8ee3087c534b}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <Filter Include="App\Renderer">
+      <UniqueIdentifier>{a2ab6707-e833-4b4d-ae6c-7ba114db9642}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App\Window\Window.h">
@@ -30,5 +32,7 @@
     </ClInclude>
     <ClInclude Include="src\Debug.h" />
     <ClInclude Include="src\stdinc.h" />
+    <ClInclude Include="src\App\Renderer\Renderer.h" />
+    <ClInclude Include="src\App\Renderer\ShaderManager\ShaderManager.h" />
   </ItemGroup>
 </Project>

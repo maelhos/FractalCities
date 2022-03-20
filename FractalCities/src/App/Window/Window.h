@@ -1,13 +1,16 @@
 #pragma once
 #include "../../stdinc.h"
+#include "../Renderer/Renderer.h"
 
 class FCWindow
 {
 private:
 	const std::string p_title;
-	GLFWwindow* window;
 	bool running;
 	int32_t error_state;
+
+	GLFWwindow* window;
+	FCRenderer* p_renderer;
 public:
 	FCWindow(const std::string& title);
 	~FCWindow();

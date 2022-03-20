@@ -6,11 +6,12 @@
 #include <stdint.h>
 
 #include <GL/glew.h>
+
 #include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
+//#include <glm/glm.hpp>
 
 #include "Debug.h"
 
 #define WINDOW_TITLE  "Fractal Cities"
-#define WINDOW_HEIGHT 1024
+#define WINDOW_HEIGHT 768 //1024
 #define WINDOW_WIDTH  768
