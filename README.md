@@ -1,2 +1,3 @@
 # FractalCities
  A Fractal city renderer and simulator
+ Currently only renders mandelbrot fractal...
